@@ -1,6 +1,6 @@
 # basedecreditoregrelinear
 
-nálise de Crédito - Regressão Linear
+análise de Crédito - Regressão Linear
 Este repositório contém um notebook Jupyter que realiza uma análise de regressão linear no conjunto de dados "Limite de Crédito". O objetivo é prever o limite do cheque especial com base em várias características dos clientes.
 
 Conteúdo do Notebook
