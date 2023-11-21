@@ -1,36 +1,35 @@
 # basedecreditoregrelinear
 
-análise de Crédito - Regressão Linear
-Este repositório contém um notebook Jupyter que realiza uma análise de regressão linear no conjunto de dados "Limite de Crédito". O objetivo é prever o limite do cheque especial com base em várias características dos clientes.
+Credit Analysis - Linear Regression
+This repository contains a Jupyter notebook that performs a linear regression analysis on the "Credit Limit" dataset. The goal is to predict the overdraft limit based on various customer characteristics.
 
-Conteúdo do Notebook
-Importação de Bibliotecas
+Notebook Contents
+Importing Libraries
+Imported necessary libraries, including pandas, numpy, seaborn, and scikit-learn.
 
-Importou as bibliotecas necessárias, incluindo pandas, numpy, seaborn e scikit-learn.
-Carregamento dos Dados
+Data Loading
+Loaded data from the file "Cópia de Limite_Credito_Dummy.xlsx" using the pandas library.
 
-Carregou os dados do arquivo "Cópia de Limite_Credito_Dummy.xlsx" usando a biblioteca pandas.
-Pré-processamento
+Preprocessing
+Used LabelEncoder to transform the 'Escolaridade' (Education), 'Gênero' (Gender), and 'Região' (Region) columns into numerical values. Applied MinMaxScaler to normalize the DataFrame's data.
 
-Utilizou o LabelEncoder para transformar as colunas 'Escolaridade', 'Gênero' e 'Região' em valores numéricos.
-Usou o MinMaxScaler para normalizar os dados do DataFrame.
-Análise Exploratória
+Exploratory Analysis
+Generated histograms to visualize the distribution of the target variable 'LimitedoChequeEspecial' (Overdraft Limit). Calculated descriptive statistics for the DataFrame.
 
-Gerou histogramas para visualizar a distribuição da variável alvo 'LimitedoChequeEspecial'.
-Calculou estatísticas descritivas para o DataFrame.
-Modelagem de Regressão
+Regression Modeling
+Used the statsmodels library to perform linear regression with different configurations of independent variables. Printed regression results for each fitted model.
 
-Utilizou a biblioteca statsmodels para realizar regressão linear em diferentes configurações de variáveis independentes.
-Imprimiu os resultados da regressão para cada modelo ajustado.
-Modelo de Regressão Linear com scikit-learn
+Linear Regression Model with scikit-learn
+Split the data into training and testing sets. Fitted a linear regression model using the training set. Evaluated the model's performance on both training and test sets using metrics such as MAE, MSE, and RMSE.
 
-Separou os dados em conjuntos de treino e teste.
-Ajustou um modelo de regressão linear usando o conjunto de treino.
-Avaliou o desempenho do modelo nos conjuntos de treino e teste utilizando métricas como MAE, MSE e RMSE.
-Resultados
-Foram ajustados vários modelos de regressão linear utilizando diferentes conjuntos de variáveis independentes. As métricas de desempenho do modelo foram calculadas e avaliadas para verificar quais variáveis têm maior impacto na previsão do limite do cheque especial.
+Results
+Various linear regression models were fitted using different sets of independent variables. Model performance metrics were calculated and evaluated to determine which variables have the greatest impact on predicting the overdraft limit.
 
-Como Executar
-Instale as bibliotecas listadas no arquivo de requisitos (requirements.txt).
-Abra o notebook Jupyter.
-Execute cada célula do notebook em ordem para reproduzir as análises e resultados.
+How to Run
+Install the required libraries listed in the requirements.txt file.
+Open the Jupyter notebook.
+Execute each cell of the notebook in order to reproduce the analyses and results.
+
+
+
+
